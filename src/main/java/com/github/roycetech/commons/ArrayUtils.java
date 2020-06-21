@@ -9,7 +9,9 @@ public class ArrayUtils {
     }
 
     /**
-     * Combines multi-dimensional array by combining elements from each array.
+     * Combines a multi-dimensional array by combining the elements from each
+     * array. For example: <code>product([1, 2], [2, 3]])</code> will result in
+     * <code>[[1, 2][1, 3][2, 2][2, 3]]</code>
      *
      * @param arrays source array.
      * @return product of multi-dimensional array.
