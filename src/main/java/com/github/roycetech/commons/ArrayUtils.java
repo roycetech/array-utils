@@ -23,10 +23,7 @@ public class ArrayUtils {
 	    return arrays;
 	}
 
-	int total = arrays[0].length;
-	for (int i = 1; i < arrays.length; i++) {
-	    total *= arrays[i].length;
-	}
+	final int total = computeTotal(arrays);
 	final int typeCount = arrays.length;
 
 	final Object[][] result = new Object[total][typeCount];
@@ -48,6 +45,14 @@ public class ArrayUtils {
 	}
 
 	return result;
+    }
+
+    private static int computeTotal(Object[][] arrays) {
+	int total = arrays[0].length;
+	for (int i = 1; i < arrays.length; i++) {
+	    total *= arrays[i].length;
+	}
+	return total;
     }
 
     private static int getDivisor(Object[][] arrays, final int x) {
