@@ -29,22 +29,30 @@ public class ArrayUtils {
 	final Object[][] result = new Object[total][typeCount];
 
 	for (int y = 0; y < total; y++) {
-	    for (int x = 0; x < typeCount; x++) {
-		final int divisor = getDivisor(arrays, x);
-
-		final int sourceX;
-		if (x == arrays.length - 1) {
-		    sourceX = y % arrays[x].length;
-		} else {
-		    sourceX = y / divisor;
-		}
-
-		final int sourceY = x;
-		result[y][x] = arrays[sourceY][sourceX % arrays[x].length];
-	    }
+	    result[y] = computeScenario(y, typeCount, arrays);
 	}
 
 	return result;
+    }
+
+    // = PRIVATE METHODS =====================================================
+    private static Object[] computeScenario(int y, int typeCount,
+	    Object[][] arrays) {
+	final Object[] retval = new Object[typeCount];
+	for (int x = 0; x < typeCount; x++) {
+	    final int divisor = getDivisor(arrays, x);
+
+	    final int sourceX;
+	    if (x == arrays.length - 1) {
+		sourceX = y % arrays[x].length;
+	    } else {
+		sourceX = y / divisor;
+	    }
+
+	    final int sourceY = x;
+	    retval[x] = arrays[sourceY][sourceX % arrays[x].length];
+	}
+	return retval;
     }
 
     private static int computeTotal(Object[][] arrays) {
