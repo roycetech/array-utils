@@ -9,6 +9,26 @@ Common array utilities, only one function for now. Prefer to reuse, but I
 [![Maintainability](https://api.codeclimate.com/v1/badges/6330244f9f409c00e60c/maintainability)](https://codeclimate.com/github/roycetech/array-utils/maintainability)
 
 
-## To build
+### To build
 
 `mvn test`
+
+
+
+### Release process
+
+- Develop, develop, develop
+- Commit any outstanding changes
+- Verify build passes with `mvn test`
+- Update versions to release version with `mvn versions:set -DnewVersion=x.x.x`
+- Commit release version
+- Run deployment with: `mvn clean deploy -P release`
+- Update versions to next snapshot version: `mvn versions:set -DnewVersion=x.x.x-SNAPSHOT`
+- Commit new snapshot version
+- Develop, develop, develop and rinse and repeat
+
+
+
+### References
+
+[Working with Apache Maven]()https://central.sonatype.org/pages/apache-maven.html)
