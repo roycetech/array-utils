@@ -7,7 +7,7 @@
 
 	<groupId>com.github.roycetech.commons</groupId>
 	<artifactId>array-utils</artifactId>
-	<version>1.0.0</version>
+	<version>0.0.1-SNAPSHOT</version>
 
 	<name>array-utils</name>
 	<url>https://github.com/roycetech/array-utils</url>
