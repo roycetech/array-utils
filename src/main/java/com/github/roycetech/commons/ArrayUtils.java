@@ -1,7 +1,7 @@
 package com.github.roycetech.commons;
 
 /**
- * Hello world!
+ * Some array utilities.
  */
 public class ArrayUtils {
 
