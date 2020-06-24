@@ -10,7 +10,28 @@
 	<version>1.0.0</version>
 
 	<name>array-utils</name>
+	<description>Common array utility functions.</description>
 	<url>https://github.com/roycetech/array-utils</url>
+
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>https://mit-license.org</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Royce Remulla</name>
+			<email>royce.com@gmail.com</email>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git://github.com/roycetech/array-utils.git</connection>
+		<developerConnection>scm:git:ssh://github.com:roycetech/array-utilities.git</developerConnection>
+		<url>https://github.com/roycetech/array-utils/tree/master</url>
+	</scm>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
