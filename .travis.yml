@@ -6,13 +6,9 @@ before_script:
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 
-script: mvn test
+script: make test
 
 after_script:
   - JACOCO_SOURCE_PATH=src/main/java ./cc-test-reporter format-coverage target/site/jacoco/jacoco.xml --input-type jacoco
 
   - ./cc-test-reporter upload-coverage
-
-#  - ./cc-test-reporter after-build -t jacoco --exit-code $TRAVIS_TEST_RESULT
-
-  
