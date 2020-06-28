@@ -1,6 +1,6 @@
 # array-utils
 
-Common array utilities, only one function for now. Prefer to reuse, but I 
+Common array utilities, only one function for now. Prefer to reuse, but I
  couldn't find what I needed, so I just wrote my own. This project is built for
  at least Java 1.8.
 
@@ -20,13 +20,12 @@ Common array utilities, only one function for now. Prefer to reuse, but I
 - Develop, develop, develop
 - Commit any outstanding changes
 - Verify build passes with `mvn test`
-- Update versions to release version with `mvn versions:set -DnewVersion=x.x.x`
+- Update versions to release version with `mvn versions:set -DnewVersion=1.0.2`
 - Commit release version
 - Run deployment with: `mvn clean deploy -P release`
-- Update versions to next snapshot version: `mvn versions:set -DnewVersion=x.x.x-SNAPSHOT`
+- Update versions to next snapshot version: `mvn versions:set -DnewVersion=1.0.2-SNAPSHOT`
 - Commit new snapshot version
 - Develop, develop, develop and rinse and repeat
-
 
 
 ### References
