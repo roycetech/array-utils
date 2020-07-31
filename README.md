@@ -7,7 +7,7 @@ Common array utilities, only one function for now. Prefer to reuse, but I
 [![Build Status](https://travis-ci.com/roycetech/array-utils.svg?branch=master)](https://travis-ci.com/roycetech/array-utils)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/6330244f9f409c00e60c/test_coverage)](https://codeclimate.com/github/roycetech/array-utils/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/6330244f9f409c00e60c/maintainability)](https://codeclimate.com/github/roycetech/array-utils/maintainability)
-
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.roycetech.commons/array-utils.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.github.roycetech.commons%22%20AND%20a:%22array-utils%22)
 
 ### To build
 
