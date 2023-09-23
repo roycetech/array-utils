@@ -13,8 +13,6 @@ Common array utilities, only one function for now. Prefer to reuse, but I
 
 `mvn test`
 
-
-
 ### Release process
 
 - Develop, develop, develop
@@ -27,7 +25,6 @@ Common array utilities, only one function for now. Prefer to reuse, but I
 - Commit new snapshot version
 - Develop, develop, develop and rinse and repeat
 
-
 ### References
 
-[Working with Apache Maven]()https://central.sonatype.org/pages/apache-maven.html)
+[Working with Apache Maven](https://central.sonatype.org/pages/apache-maven.html)
